@@ -1,7 +1,7 @@
 import React from "react";
 
 const ExperiencePage = () => {
-    return <div>ini experience</div>;
+    return <div>Ini ExperiencePage</div>;
 };
 
 export default ExperiencePage;
