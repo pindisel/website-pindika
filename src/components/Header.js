@@ -7,24 +7,23 @@ const Header = () => {
         <div className="header">
             <ul>
                 <li className="header-list">
-                    <Link className="header-link" to="/achievement">
-                        Achievement{" "}
+                    <Link className="header-link underline-transition" to="/">
+                        Home{" "}
                     </Link>
                 </li>
                 <li className="header-list">
-                    <Link className="header-link" to="/experience">
-                        Experience{" "}
-                    </Link>
-                </li>
-
-                <li className="header-list">
-                    <Link className="header-link" to="/project">
+                    <Link className="header-link underline-transition" to="/project">
                         Project{" "}
                     </Link>
                 </li>
                 <li className="header-list">
-                    <Link className="header-link" to="/">
-                        Home{" "}
+                    <Link className="header-link underline-transition" to="/experience">
+                        Experience{" "}
+                    </Link>
+                </li>
+                <li className="header-list">
+                    <Link className="header-link underline-transition" to="/achievement">
+                        Achievement{" "}
                     </Link>
                 </li>
             </ul>

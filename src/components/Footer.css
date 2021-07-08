@@ -1,8 +1,12 @@
 .footer {
     position: fixed;
-    left: 0;
     bottom: 0;
     width: 100%;
     text-align: center;
-    border-top: 1px solid lightgray;
+    height: 70px;
+    border-top: 1px solid #457b9d;
+    color: #f1faee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

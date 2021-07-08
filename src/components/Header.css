@@ -1,8 +1,12 @@
 .header {
     font-size: 1.5em;
     color: #f1faee;
-    margin-right: 7%;
-    margin-top: 2%;
+    padding: 1% 7% 1% 0%;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
 }
 
 .header ul {
@@ -10,16 +14,20 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
 }
 
 .header-list {
-    float: right;
+    padding-right: 50px;
 }
 
-.header-link {
+.header-list:last-child {
+    padding-right: 0px;
+}
+
+.underline-transition {
     position: relative;
-    display: block;
-    margin-left: 2em;
     text-decoration: none;
 }
 
@@ -29,7 +37,7 @@
     color: #f1faee;
 }
 
-.header-link::before {
+.underline-transition::before {
     content: "";
     position: absolute;
     display: block;
@@ -42,6 +50,6 @@
     transition: transform 0.3s ease;
 }
 
-.header-link:hover::before {
+.underline-transition:hover::before {
     transform: scaleX(1);
 }
