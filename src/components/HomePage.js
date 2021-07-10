@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import Foto from "../assets/foto.png";
-import { Link } from "react-router-dom";
 import { AiOutlineInstagram, AiOutlineLinkedin, AiOutlineYoutube, AiOutlineGithub, AiOutlineMail, AiOutlineTwitter } from "react-icons/ai";
+import { Link as LinkScroll } from "react-scroll";
 import "./HomePage.css";
 
 const HomePage = () => {
+    const [project, setProject] = useState([
+        { id: 1, name: "Project 1", desc: "lorem ipsum.." },
+        { id: 2, name: "Project 1", desc: "lorem ipsum.." },
+        { id: 3, name: "Project 1", desc: "lorem ipsum.." },
+    ]);
+
     return (
-        <div className="homepage">
+        <div className="homepage" id="homepage">
             <div className="homepage-1">
                 <div className="homepage-foto">
                     <img src={Foto} alt="Foto Pindika" />
@@ -16,20 +22,25 @@ const HomePage = () => {
                         Yo! I’m <span className="homepage-pindika">Pindika!</span>
                     </h1>
                     <p>
-                        My name is Anathapindika Muliawan. I’m an Undergraduate Student of Computer Engineering at University of Indonesia. More about me <Link className="homepage-text-link">here!</Link>
+                        My name is Anathapindika Muliawan. I’m an Undergraduate Student of Computer Engineering at University of Indonesia. More about me{" "}
+                        <LinkScroll className="homepage-text-link" activeClass="active" to="aboutme" spy={true} smooth={true}>
+                            here!
+                        </LinkScroll>
                     </p>
                 </div>
             </div>
             <div className="homepage-2">
                 <h1>P R O J E C T</h1>
                 <div className="project-container-1">
-                    <li className="project-container-2">Project1</li>
-                    <li className="project-container-2">Project1</li>
-                    <li className="project-container-2">Project1</li>
+                    {project.map((project) => (
+                        <li className="project-container-2">
+                            <div>{project.name}</div>
+                        </li>
+                    ))}
                 </div>
             </div>
-            <div className="homepage-3">
-                <h1>A B O U T M E</h1>
+            <div className="homepage-3" id="aboutme">
+                <h1>A B O U T&nbsp; M E</h1>
                 <div className="aboutme-container">
                     <div className="aboutme-container-text">
                         <div className="aboutme-text">

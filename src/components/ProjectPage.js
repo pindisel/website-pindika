@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
 const ProjectPage = () => {
-    return <div>Ini Project page</div>;
+    return (
+        <div>
+            {/* {project.map((project) => (
+                <div>{project.name}</div>
+            ))} */}
+        </div>
+    );
 };
 
 export default ProjectPage;

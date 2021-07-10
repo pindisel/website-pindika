@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link as LinkRouter } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
@@ -7,25 +7,30 @@ const Header = () => {
         <div className="header">
             <ul>
                 <li className="header-list">
-                    <Link className="header-link underline-transition" to="/">
+                    <LinkRouter className="header-link underline-transition" to="/">
                         Home{" "}
-                    </Link>
+                    </LinkRouter>
                 </li>
                 <li className="header-list">
-                    <Link className="header-link underline-transition" to="/project">
+                    <LinkRouter className="header-link underline-transition" to="/project">
                         Project{" "}
-                    </Link>
+                    </LinkRouter>
                 </li>
                 <li className="header-list">
-                    <Link className="header-link underline-transition" to="/experience">
+                    <a className="header-link underline-transition" href="https://medium.com/@anathapindika.m" target="_blank" rel="noopener noreferrer">
+                        Blog
+                    </a>
+                </li>
+                {/* <li className="header-list">
+                    <LinkRouter className="header-link underline-transition" to="/experience">
                         Experience{" "}
-                    </Link>
+                    </LinkRouter>
                 </li>
                 <li className="header-list">
-                    <Link className="header-link underline-transition" to="/achievement">
+                    <LinkRouter className="header-link underline-transition" to="/achievement">
                         Achievement{" "}
-                    </Link>
-                </li>
+                    </LinkRouter>
+                </li> */}
             </ul>
         </div>
     );
