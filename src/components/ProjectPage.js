@@ -1,11 +1,12 @@
 import React, { useState } from "react";
+import { projects } from "./data";
 
 const ProjectPage = () => {
     return (
         <div>
-            {/* {project.map((project) => (
+            {projects.map((project) => (
                 <div>{project.name}</div>
-            ))} */}
+            ))}
         </div>
     );
 };

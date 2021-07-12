@@ -1,5 +1,5 @@
 import { Route, Switch } from "react-router-dom";
-import { Header, Footer, HomePage, ProjectPage, AchievementPage, ExperiencePage } from "./components";
+import { Header, Footer, HomePage, ProjectPage, ProjectSingle, AchievementPage, ExperiencePage } from "./components";
 
 function App() {
     return (
@@ -10,6 +10,7 @@ function App() {
                 <Route exact path="/project" component={ProjectPage} />
                 <Route exact path="/experience" component={ExperiencePage} />
                 <Route exact path="/achievement" component={AchievementPage} />
+                {/* <Route exact path="/project/:id" render={(props) => <ProjectSingle {...props} />} /> */}
             </Switch>
             <Footer />
         </>

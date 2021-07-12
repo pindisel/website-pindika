@@ -3,14 +3,9 @@ import Foto from "../assets/foto.png";
 import { AiOutlineInstagram, AiOutlineLinkedin, AiOutlineYoutube, AiOutlineGithub, AiOutlineMail, AiOutlineTwitter } from "react-icons/ai";
 import { Link as LinkScroll } from "react-scroll";
 import "./HomePage.css";
+import { projects } from "./data";
 
 const HomePage = () => {
-    const [project, setProject] = useState([
-        { id: 1, name: "Project 1", desc: "lorem ipsum.." },
-        { id: 2, name: "Project 1", desc: "lorem ipsum.." },
-        { id: 3, name: "Project 1", desc: "lorem ipsum.." },
-    ]);
-
     return (
         <div className="homepage" id="homepage">
             <div className="homepage-1">
@@ -32,10 +27,8 @@ const HomePage = () => {
             <div className="homepage-2">
                 <h1>P R O J E C T</h1>
                 <div className="project-container-1">
-                    {project.map((project) => (
-                        <li className="project-container-2">
-                            <div>{project.name}</div>
-                        </li>
+                    {projects.slice(0, 3).map((project) => (
+                        <div className="project-container-2">{project.name}</div>
                     ))}
                 </div>
             </div>
