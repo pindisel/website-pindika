@@ -4,6 +4,7 @@ import { AiOutlineInstagram, AiOutlineLinkedin, AiOutlineYoutube, AiOutlineGithu
 import { Link as LinkScroll } from "react-scroll";
 import "./HomePage.css";
 import { projects } from "./data";
+import ProjectList from "./ProjectList";
 
 const HomePage = () => {
     return (
@@ -26,11 +27,11 @@ const HomePage = () => {
             </div>
             <div className="homepage-2">
                 <h1>P R O J E C T</h1>
-                <div className="project-container-1">
-                    {projects.slice(0, 3).map((project) => (
+
+                <ProjectList projects={projects} />
+                {/* {projects.slice(0, 3).map((project) => (
                         <div className="project-container-2">{project.name}</div>
-                    ))}
-                </div>
+                    ))} */}
             </div>
             <div className="homepage-3" id="aboutme">
                 <h1>A B O U T&nbsp; M E</h1>
