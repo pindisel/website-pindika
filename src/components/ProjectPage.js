@@ -1,12 +1,10 @@
-import React, { useState } from "react";
-import { projects } from "./data";
+import React from "react";
+import "./ProjectPage.css";
 
 const ProjectPage = () => {
     return (
-        <div>
-            {projects.map((project) => (
-                <div>{project.name}</div>
-            ))}
+        <div className="project-page">
+            <h1>PROJECT</h1>
         </div>
     );
 };

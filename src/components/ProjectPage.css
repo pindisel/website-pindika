@@ -1,0 +1,9 @@
+.project-page h1 {
+    color: #f1faee;
+    font-size: 4em;
+}
+
+.project-page h1 {
+    display: flex;
+    justify-content: center;
+}
