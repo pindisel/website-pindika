@@ -10,10 +10,10 @@ const ProjectSingle = () => {
     console.log(project);
 
     return (
-        <div className="tes">
-            {project.name}
-            {project.link}
-            {project.desc}
+        <div className="project-single">
+            <h1>{project.name}</h1>
+
+            <p>{project.desc}</p>
         </div>
     );
 };

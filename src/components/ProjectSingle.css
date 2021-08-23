@@ -1,0 +1,11 @@
+.project-single {
+    color: #f1faee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-single h1 {
+    font-size: 3em;
+}
