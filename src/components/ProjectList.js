@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
+import { Link as LinkRouter } from "react-router-dom";
 
 const ProjectList = ({ projects }) => {
-    const [current, setCurrent] = useState(0);
+    let [current, setCurrent] = useState(0);
     const length = projects.length;
 
     const nextProject = () => {
@@ -13,10 +13,6 @@ const ProjectList = ({ projects }) => {
     const prevProject = () => {
         setCurrent(current === 0 ? length - 1 : current - 1);
     };
-
-    console.log(current);
-    console.log(projects);
-    console.log(length);
 
     return (
         <div className="project-container-1">
@@ -30,7 +26,9 @@ const ProjectList = ({ projects }) => {
                             {index === current && (
                                 <div className="project-container-2">
                                     <h2 className="project-name">{project.name}</h2>
-                                    <img src={project.image} className="project-thumbnail" />
+                                    <LinkRouter to={`/project/${project.id}`}>
+                                        <img src={project.image} className="project-thumbnail" alt={project.name} />
+                                    </LinkRouter>
                                 </div>
                             )}
                         </div>

@@ -9,5 +9,5 @@ export const projects = [
     { id: 2, name: "Currency Converter in C", desc: "lorem ipsum..", link: "https://github.com/pindisel/Project_CurrencyConverter", image: converter },
     { id: 3, name: "EZCOOKFOR.ME", desc: "lorem ipsum..", link: "https://github.com/pindisel/ezcookforme", image: ezcookforme },
     { id: 4, name: "Personal To-Do List", desc: "lorem ipsum..", link: "", image: todolist },
-    { id: 5, name: "Portfolio Website", desc: "lorem ipsum..", link: "https://github.com/pindisel/website-pindika", image: website },
+    { id: 5, name: "Personal Website", desc: "lorem ipsum..", link: "https://github.com/pindisel/website-pindika", image: website },
 ];

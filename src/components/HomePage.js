@@ -4,7 +4,7 @@ import { AiOutlineInstagram, AiOutlineLinkedin, AiOutlineYoutube, AiOutlineGithu
 import { Link as LinkScroll } from "react-scroll";
 import "./HomePage.css";
 import ProjectList from "./ProjectList";
-import { projects } from "./data";
+import { projects } from "./project";
 
 const HomePage = () => {
     return (
@@ -25,7 +25,7 @@ const HomePage = () => {
                     </p>
                 </div>
             </div>
-            <div className="homepage-2" id="project">
+            <div className="homepage-2">
                 <h1>P R O J E C T</h1>
                 <ProjectList projects={projects} />
             </div>
