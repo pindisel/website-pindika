@@ -26,7 +26,7 @@ const ProjectList = ({ projects }) => {
                             {index === current && (
                                 <div className="project-container-2">
                                     <h2 className="project-name">{project.name}</h2>
-                                    <LinkRouter to={`/project/${project.id}`}>
+                                    <LinkRouter to={`/project/${project.name.replaceAll(" ", "-")}`}>
                                         <img src={project.image} className="project-thumbnail" alt={project.name} />
                                     </LinkRouter>
                                 </div>

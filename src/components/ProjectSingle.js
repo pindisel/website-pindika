@@ -4,9 +4,10 @@ import { projects } from "./project";
 import "./ProjectSingle.css";
 
 const ProjectSingle = () => {
-    const { id } = useParams();
-    let project = projects.find((projects) => projects.id === Number(id));
-    console.log(id);
+    const { name } = useParams();
+    console.log(name);
+    let project = projects.find((projects) => projects.name === name.replaceAll("-", " "));
+
     console.log(project);
 
     return (

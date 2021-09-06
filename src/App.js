@@ -10,7 +10,7 @@ function App() {
                 <Route exact path="/project" component={ProjectPage} />
                 <Route exact path="/experience" component={ExperiencePage} />
                 <Route exact path="/achievement" component={AchievementPage} />
-                <Route exact path="/project/:id" component={ProjectSingle} />
+                <Route exact path="/project/:name" component={ProjectSingle} />
             </Switch>
             <Footer />
         </>

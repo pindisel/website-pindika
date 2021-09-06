@@ -18,14 +18,21 @@ const HomePage = () => {
                         Yo! I’m <span className="homepage-pindika">Pindika!</span>
                     </h1>
                     <p>
-                        My name is Anathapindika Muliawan. I’m an Undergraduate Student of Computer Engineering at University of Indonesia. More about me{" "}
+                        My name is Anathapindika Muliawan. I’m an Undergraduate Student of Computer Engineering at University of Indonesia.
+                        <br />
+                        <LinkScroll className="homepage-text-link" activeClass="active" to="project" spy={true} smooth={true}>
+                            Here
+                        </LinkScroll>{" "}
+                        is some of my projects!
+                        <br />
+                        Learn more about me{" "}
                         <LinkScroll className="homepage-text-link" activeClass="active" to="aboutme" spy={true} smooth={true}>
                             here!
                         </LinkScroll>
                     </p>
                 </div>
             </div>
-            <div className="homepage-2">
+            <div className="homepage-2" id="project">
                 <h1>P R O J E C T</h1>
                 <ProjectList projects={projects} />
             </div>
