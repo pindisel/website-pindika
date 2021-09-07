@@ -99,9 +99,11 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
-            <p className="homepage-text-link top" activeClass="active" onClick={scrollWin}>
-                <IoIosArrowUp />
-                &nbsp;Back to top
+            <p className="top">
+                <span className="homepage-text-link " activeClass="active" onClick={scrollWin}>
+                    <IoIosArrowUp />
+                    &nbsp;Back to top
+                </span>
             </p>
         </div>
     );
