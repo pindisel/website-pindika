@@ -9,6 +9,9 @@
     padding-top: 150px;
     flex-wrap: wrap;
     margin-bottom: 150px;
+    max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .homepage-text {
@@ -71,6 +74,9 @@
     align-items: center;
     justify-content: center;
     grid-template-columns: 10% 80% 10%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project-container-2 {
@@ -139,6 +145,9 @@
     height: 350px;
     background-color: #324766;
     display: flex;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .aboutme-container-text {
