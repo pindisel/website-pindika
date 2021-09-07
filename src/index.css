@@ -2,6 +2,10 @@
     font-family: "Oswald", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #1d3557;
 }

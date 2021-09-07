@@ -5,7 +5,13 @@ import todolist from "../assets/todolist/todolist.png";
 import website from "../assets/website/website.png";
 
 export const projects = [
-    { id: 1, name: "Hangman Game in C", desc: "This is a Hangman Game using C Programming Language. This program is for mid term project in a group of two.", link: "https://github.com/pindisel/Proyek_Hangman", image: hangman },
+    {
+        id: 1,
+        name: "Hangman Game in C",
+        desc: "This is a Hangman Game using C Programming Language. This program is for mid term project in a group of two.",
+        link: "https://github.com/pindisel/Proyek_Hangman",
+        image: hangman,
+    },
     {
         id: 2,
         name: "Currency Converter in C",
@@ -27,5 +33,11 @@ export const projects = [
         link: "https://github.com/pindisel/to-do-list",
         image: todolist,
     },
-    { id: 5, name: "Personal Website", desc: "lorem ipsum..", link: "https://github.com/pindisel/website-pindika", image: website },
+    {
+        id: 5,
+        name: "Personal Website",
+        desc: "This project is made using React.Js framework and CSS for styling. This website is made to showcase my projects.",
+        link: "https://github.com/pindisel/website-pindika",
+        image: website,
+    },
 ];

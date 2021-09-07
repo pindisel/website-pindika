@@ -1,12 +1,24 @@
 import React from "react";
 import Foto from "../assets/foto.png";
 import { AiOutlineInstagram, AiOutlineLinkedin, AiOutlineYoutube, AiOutlineGithub, AiOutlineMail, AiOutlineTwitter } from "react-icons/ai";
-import { Link as LinkScroll } from "react-scroll";
+import { IoIosArrowUp } from "react-icons/io";
 import "./HomePage.css";
 import ProjectList from "./ProjectList";
 import { projects } from "./project";
 
 const HomePage = () => {
+    function scrollProject() {
+        window.scrollTo(0, 830);
+    }
+
+    function scrollAbout() {
+        window.scrollTo(0, 2000);
+    }
+
+    function scrollWin() {
+        window.scrollTo(0, 0);
+    }
+
     return (
         <div className="homepage" id="homepage">
             <div className="homepage-1">
@@ -20,32 +32,34 @@ const HomePage = () => {
                     <p>
                         My name is Anathapindika Muliawan. I’m an Undergraduate Student of Computer Engineering at University of Indonesia.
                         <br />
-                        <LinkScroll className="homepage-text-link" activeClass="active" to="project" spy={true} smooth={true}>
+                        <span className="homepage-text-link" activeClass="active" onClick={scrollProject}>
                             Here
-                        </LinkScroll>{" "}
+                        </span>{" "}
                         is some of my projects!
                         <br />
                         Learn more about me{" "}
-                        <LinkScroll className="homepage-text-link" activeClass="active" to="aboutme" spy={true} smooth={true}>
+                        <span className="homepage-text-link" activeClass="active" onClick={scrollAbout}>
                             here!
-                        </LinkScroll>
+                        </span>
                     </p>
                 </div>
             </div>
-            <div className="homepage-2" id="project">
+            <div className="homepage-2">
                 <h1>P R O J E C T</h1>
                 <ProjectList projects={projects} />
             </div>
-            <div className="homepage-3" id="aboutme">
+            <div className="homepage-3">
                 <h1>A B O U T&nbsp; M E</h1>
                 <div className="aboutme-container">
                     <div className="aboutme-container-text">
                         <div className="aboutme-text">
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                deserunt mollit anim id est laborum.
+                                My name is Anathapindika Muliawan. I'm a college student and a Wushu athlete for 12 years. I'm interested in Programming and Web Development. I love to make small projects to improve my skills. I work pretty
+                                well as a team. I know C/C++ Programming language and Python. I use React.Js and CSS to make websites.
                             </p>
+                        </div>
+                        <div>
+                            <p>Check out my socials!</p>
                         </div>
                         <div className="aboutme-icons">
                             <li>
@@ -85,6 +99,10 @@ const HomePage = () => {
                     </div>
                 </div>
             </div>
+            <p className="homepage-text-link top" activeClass="active" onClick={scrollWin}>
+                <IoIosArrowUp />
+                &nbsp;Back to top
+            </p>
         </div>
     );
 };

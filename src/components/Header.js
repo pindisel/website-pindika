@@ -6,6 +6,9 @@ const Header = () => {
     function scrollWin() {
         window.scrollTo(0, 0);
     }
+    function scrollProject() {
+        window.scrollTo(0, 830);
+    }
     return (
         <div className="header">
             <ul>
@@ -15,7 +18,7 @@ const Header = () => {
                     </LinkRouter>
                 </li>
                 <li className="header-list">
-                    <LinkRouter className="header-link underline-transition" to="/project" onClick={scrollWin}>
+                    <LinkRouter className="header-link underline-transition" to="/" onClick={scrollProject}>
                         Project{" "}
                     </LinkRouter>
                 </li>
