@@ -1,26 +1,24 @@
 import React from "react";
-import { Link as LinkRouter } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import "./Header.css";
 
 const Header = () => {
     function scrollWin() {
         window.scrollTo(0, 0);
     }
-    function scrollProject() {
-        window.scrollTo(0, 830);
-    }
+
     return (
         <div className="header">
             <ul>
                 <li className="header-list">
-                    <LinkRouter className="header-link underline-transition" to="/" onClick={scrollWin}>
+                    <Link className="header-link underline-transition" to="/" onClick={scrollWin}>
                         Home{" "}
-                    </LinkRouter>
+                    </Link>
                 </li>
                 <li className="header-list">
-                    <LinkRouter className="header-link underline-transition" to="/" onClick={scrollProject}>
+                    <Link className="header-link underline-transition" to="#project">
                         Project{" "}
-                    </LinkRouter>
+                    </Link>
                 </li>
                 <li className="header-list">
                     <a className="header-link underline-transition" href="https://medium.com/@anathapindika.m" target="_blank" rel="noopener noreferrer">

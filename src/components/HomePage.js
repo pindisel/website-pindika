@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Foto from "../assets/foto.png";
 import { AiOutlineInstagram, AiOutlineLinkedin, AiOutlineYoutube, AiOutlineGithub, AiOutlineMail, AiOutlineTwitter } from "react-icons/ai";
 import { IoIosArrowUp } from "react-icons/io";
@@ -7,13 +7,11 @@ import ProjectList from "./ProjectList";
 import { projects } from "./project";
 
 const HomePage = () => {
-    function scrollProject() {
-        window.scrollTo(0, 830);
-    }
+    const refProject = useRef(null);
+    const scrollProject = () => refProject.current.scrollIntoView();
 
-    function scrollAbout() {
-        window.scrollTo(0, 2000);
-    }
+    const refAbout = useRef(null);
+    const scrollAbout = () => refAbout.current.scrollIntoView();
 
     function scrollWin() {
         window.scrollTo(0, 0);
@@ -44,11 +42,11 @@ const HomePage = () => {
                     </p>
                 </div>
             </div>
-            <div className="homepage-2">
+            <div className="homepage-2" ref={refProject} id="project">
                 <h1>P R O J E C T</h1>
                 <ProjectList projects={projects} />
             </div>
-            <div className="homepage-3">
+            <div className="homepage-3" ref={refAbout}>
                 <h1>A B O U T&nbsp; M E</h1>
                 <div className="aboutme-container">
                     <div className="aboutme-container-text">
