@@ -1,5 +1,5 @@
 import { Route, Switch } from "react-router-dom";
-import { Header, Footer, HomePage, ProjectSingle, AchievementPage, ExperiencePage } from "./components";
+import { Header, Footer, HomePage, ProjectSingle } from "./components";
 
 function App() {
     return (

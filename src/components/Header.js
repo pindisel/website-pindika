@@ -25,16 +25,6 @@ const Header = () => {
                         Blog
                     </a>
                 </li>
-                {/* <li className="header-list">
-                    <LinkRouter className="header-link underline-transition" to="/experience">
-                        Experience{" "}
-                    </LinkRouter>
-                </li>
-                <li className="header-list">
-                    <LinkRouter className="header-link underline-transition" to="/achievement">
-                        Achievement{" "}
-                    </LinkRouter>
-                </li> */}
             </ul>
         </div>
     );
