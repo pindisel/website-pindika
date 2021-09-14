@@ -104,7 +104,6 @@ const HomePage = () => {
                 </span>
             </p>
         </div>
-        //fsfsf
     );
 };
 
