@@ -10,7 +10,7 @@
     max-width: 2000px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 20vh;
+    padding-top: 25vh;
 }
 
 .homepage-text {
@@ -78,6 +78,7 @@
     align-items: center;
     justify-content: center;
     grid-template-columns: 10% 80% 10%;
+    width: 70%;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -153,11 +154,13 @@
     max-width: 1500px;
     margin-left: auto;
     margin-right: auto;
+    width: 80%;
 }
 
 .aboutme-container-text {
     display: flex;
     flex-direction: column;
+    min-width: 0px;
     margin-right: 3%;
     margin-left: 3%;
 }
@@ -170,9 +173,9 @@
 }
 
 .aboutme-text {
-    flex: 2;
-    display: flex;
-    align-items: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    min-width: 0px;
 }
 
 .aboutme-icons {
@@ -209,6 +212,9 @@
 
 .top {
     text-align: center;
+}
+
+@media screen and (max-width: 1700px) {
 }
 
 @media only screen and (max-width: 1200px) {
