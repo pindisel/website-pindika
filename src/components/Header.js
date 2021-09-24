@@ -1,5 +1,5 @@
 import React from "react";
-import { HashLink as Link } from "react-router-hash-link";
+import { Link } from "react-scroll";
 import "./Header.css";
 
 const Header = () => {
@@ -16,7 +16,7 @@ const Header = () => {
                     </Link>
                 </li>
                 <li className="header-list">
-                    <Link className="header-link underline-transition" to="#project">
+                    <Link className="header-link underline-transition" to="project">
                         Project{" "}
                     </Link>
                 </li>

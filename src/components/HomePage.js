@@ -1,4 +1,5 @@
-import React, { useRef } from "react";
+import React from "react";
+import { Link } from "react-scroll";
 import Foto from "../assets/foto.png";
 import { AiOutlineInstagram, AiOutlineLinkedin, AiOutlineYoutube, AiOutlineGithub, AiOutlineMail, AiOutlineTwitter } from "react-icons/ai";
 import { IoIosArrowUp } from "react-icons/io";
@@ -7,12 +8,6 @@ import ProjectList from "./ProjectList";
 import { projects } from "./project";
 
 const HomePage = () => {
-    const refProject = useRef(null);
-    const scrollProject = () => refProject.current.scrollIntoView();
-
-    const refAbout = useRef(null);
-    const scrollAbout = () => refAbout.current.scrollIntoView();
-
     function scrollWin() {
         window.scrollTo(0, 0);
     }
@@ -30,23 +25,23 @@ const HomePage = () => {
                     <p>
                         My name is Anathapindika Muliawan. I’m an Undergraduate Student of Computer Engineering at University of Indonesia.
                         <br />
-                        <span className="homepage-text-link" activeClass="active" onClick={scrollProject}>
+                        <Link className="homepage-text-link" activeClass="active" to="project">
                             Here
-                        </span>{" "}
+                        </Link>{" "}
                         is some of my projects!
                         <br />
                         Learn more about me{" "}
-                        <span className="homepage-text-link" activeClass="active" onClick={scrollAbout}>
+                        <Link className="homepage-text-link" activeClass="active" to="aboutme">
                             here!
-                        </span>
+                        </Link>
                     </p>
                 </div>
             </div>
-            <div className="homepage-2" ref={refProject} id="project">
+            <div className="homepage-2" id="project">
                 <h1>P R O J E C T</h1>
                 <ProjectList projects={projects} />
             </div>
-            <div className="homepage-3" ref={refAbout}>
+            <div className="homepage-3" id="aboutme">
                 <h1>A B O U T&nbsp; M E</h1>
                 <div className="aboutme-container">
                     <div className="aboutme-container-text">
@@ -104,7 +99,6 @@ const HomePage = () => {
                 </span>
             </p>
         </div>
-        //dsadasd
     );
 };
 

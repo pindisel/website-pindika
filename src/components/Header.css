@@ -24,6 +24,7 @@
 
 .header-list {
     padding-right: 50px;
+    cursor: pointer;
 }
 
 .header-list:last-child {
