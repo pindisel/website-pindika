@@ -100,14 +100,6 @@
     cursor: pointer;
 }
 
-.active {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition-duration: 1s;
-    transform: scale(1.08);
-}
-
 .arrow-wrapper {
     display: flex;
     justify-content: center;
