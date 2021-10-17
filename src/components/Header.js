@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import { Link as LinkRouter } from "react-router-dom";
 import "./Header.css";
 
 const Header = () => {
@@ -11,9 +12,9 @@ const Header = () => {
         <div className="header">
             <ul>
                 <li className="header-list">
-                    <Link className="header-link underline-transition" to="/" onClick={scrollWin}>
+                    <LinkRouter className="header-link underline-transition" to="/" onClick={scrollWin}>
                         Home{" "}
-                    </Link>
+                    </LinkRouter>
                 </li>
                 <li className="header-list">
                     <Link className="header-link underline-transition" to="project">
