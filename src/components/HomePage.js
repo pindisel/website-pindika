@@ -68,6 +68,7 @@ const HomePage = () => {
                     <div className="aboutme-container-text">
                         <div className="aboutme-text">
                             <p>
+                                {aboutmeText}
                                 {/* {isDesktop ? <div>aaa</div> : [isReadMore ? aboutmeText.slice(0, 150) : <p>{aboutmeText}</p>]}
 
                                 {isDesktop ? [isReadMore ? aboutmeText.slice(0, 150) : <p>{aboutmeText}</p>
