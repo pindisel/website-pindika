@@ -15,10 +15,12 @@
 
 .homepage-text {
     width: 49%;
+    display: flex;
+    flex-direction: column;
 }
 
 .homepage h1 {
-    font-size: 4em;
+    font-size: 4rem;
 }
 
 .homepage-2 h1,
@@ -30,7 +32,7 @@
 }
 
 .homepage p {
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 .homepage-1 p,
@@ -107,14 +109,20 @@
 
 .arrow {
     color: black;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     background-color: #f1faee;
     border-radius: 50%;
     padding: 8px;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+.arrow:hover {
+    transform: scale(1.08);
 }
 
 .project-name {
+    font-size: 2rem;
     position: absolute;
     opacity: 0;
 }
@@ -132,6 +140,14 @@
     opacity: 1;
 }
 
+.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 1s;
+    transform: scale(1.08);
+}
+
 .homepage-3 {
     margin-top: 30vh;
     padding-top: 8vh;
@@ -140,7 +156,7 @@
 .aboutme-container {
     margin: 100px 150px 100px 150px;
     padding: 25px 2%;
-    height: 350px;
+    height: fit-content;
     background-color: #324766;
     display: flex;
     max-width: 1500px;
@@ -158,10 +174,18 @@
 }
 
 .aboutme-container-photo {
-    background-color: #a8dadc;
-    border-radius: 50%;
+    display: flex;
     margin-left: 3%;
     margin-right: 3%;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutme-container-photo img {
+    background-color: #a8dadc;
+    height: 350px;
+    width: auto;
+    border-radius: 50%;
 }
 
 .aboutme-text {
@@ -191,39 +215,88 @@
 }
 
 .icons {
-    font-size: 2em;
+    font-size: 2rem;
     transition: transform 0.2s;
-}
-
-.aboutme-container-photo img {
-    background-color: #a8dadc;
-    height: 350px;
-    width: auto;
-    border-radius: 50%;
 }
 
 .top {
     text-align: center;
 }
 
-@media screen and (max-width: 1700px) {
-}
+@media screen and (max-width: 900px) {
+    .homepage h1 {
+        font-size: 2.5rem;
+    }
 
-@media only screen and (max-width: 1200px) {
-}
+    .homepage-1 {
+        display: flex;
+        flex-direction: column;
+        padding-top: 90px;
+    }
 
-/* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) {
-}
+    .homepage-text {
+        width: 80%;
+        text-align: center;
+    }
 
-/* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
-}
+    .homepage-foto {
+        margin-bottom: 10px;
+    }
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
-}
+    .homepage-foto img {
+        width: 250px;
+        height: 250px;
+    }
 
-/* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
+    .homepage-1 p {
+        padding: 0%;
+    }
+
+    .homepage-1 h1 {
+        margin-bottom: 10px;
+    }
+
+    .homepage-2,
+    .homepage-3 {
+        padding-top: 15vh;
+    }
+
+    .project-container-1 {
+        grid-template-columns: 20% 60% 20%;
+        padding: 0px;
+        height: 250px;
+    }
+
+    .arrow {
+        font-size: 1.2rem;
+    }
+
+    .project-name {
+        font-size: 1rem;
+    }
+
+    .active {
+        transform: scale(1.04);
+    }
+
+    .project-thumbnail {
+        height: 150px;
+    }
+
+    .aboutme-container {
+        display: flex;
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
+
+    .aboutme-container-photo img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .homepage-3 p {
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: center;
+    }
 }

@@ -7,11 +7,3 @@
 .project-single h1 {
     font-size: 3em;
 }
-
-.active {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition-duration: 1s;
-    transform: scale(1.08);
-}

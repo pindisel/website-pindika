@@ -1,4 +1,5 @@
 import React from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import Foto from "../assets/foto.png";
 import { AiOutlineInstagram, AiOutlineLinkedin, AiOutlineYoutube, AiOutlineGithub, AiOutlineMail, AiOutlineTwitter } from "react-icons/ai";
@@ -11,6 +12,26 @@ const HomePage = () => {
     function scrollWin() {
         window.scrollTo(0, 0);
     }
+
+    const [isDesktop, setDesktop] = useState(window.innerWidth > 900);
+
+    const updateMedia = () => {
+        setDesktop(window.innerWidth > 900);
+    };
+
+    useEffect(() => {
+        window.addEventListener("resize", updateMedia);
+        return () => window.removeEventListener("resize", updateMedia);
+    });
+
+    const aboutmeText =
+        "My name is Anathapindika Muliawan. I'm a college student and a Wushu athlete for 12 years. I'm interested in Programming and Web Development. I love to make small projects to improve my skills. I work pretty well as a team. I know C/C++ Programming language and Python. I use React.Js and CSS to make websites.";
+
+    const [isReadMore, setIsReadMore] = useState(true);
+
+    const toggleReadMore = () => {
+        setIsReadMore(!isReadMore);
+    };
 
     return (
         <div className="homepage" id="homepage">
@@ -47,8 +68,12 @@ const HomePage = () => {
                     <div className="aboutme-container-text">
                         <div className="aboutme-text">
                             <p>
-                                My name is Anathapindika Muliawan. I'm a college student and a Wushu athlete for 12 years. I'm interested in Programming and Web Development. I love to make small projects to improve my skills. I work pretty
-                                well as a team. I know C/C++ Programming language and Python. I use React.Js and CSS to make websites.
+                                {/* {isDesktop ? <div>aaa</div> : [isReadMore ? aboutmeText.slice(0, 150) : <p>{aboutmeText}</p>]}
+
+                                {isDesktop ? [isReadMore ? aboutmeText.slice(0, 150) : <p>{aboutmeText}</p>
+                                <span onClick={toggleReadMore} className="read-or-hide">
+                                    {isReadMore ? "...read more" : " show less"}
+                                </span>] : <div>aaa</div>} */}
                             </p>
                         </div>
                         <div>
