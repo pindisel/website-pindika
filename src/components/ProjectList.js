@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
-import { Link as LinkRouter } from "react-router-dom";
+// import { Link as LinkRouter } from "react-router-dom";
 
 const ProjectList = ({ projects }) => {
   let [current, setCurrent] = useState(0);
