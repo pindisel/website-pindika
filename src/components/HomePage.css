@@ -99,7 +99,7 @@
   height: 250px;
   object-fit: contain;
   transition: 0.5s ease;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .arrow-wrapper {
