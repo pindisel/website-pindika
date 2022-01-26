@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 import { Link as LinkRouter } from "react-router-dom";
 import { useState } from "react";
 import "./Header.css";
+import Logo from "../assets/logo.png";
 
 const Header = () => {
   const [isOpen, setOpen] = useState(false);
@@ -14,6 +15,16 @@ const Header = () => {
 
   return (
     <div className="header">
+      <LinkRouter
+        to="/"
+        onClick={() => {
+          setOpen(false);
+          scrollWin();
+        }}
+        className="logo-router"
+      >
+        <img className="logo" src={Logo} alt="aa" />
+      </LinkRouter>
       <div className="hamburger">
         <Hamburger
           toggled={isOpen}

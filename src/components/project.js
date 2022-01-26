@@ -1,9 +1,9 @@
-import hangman from "../assets/hangman/hangman.png";
-import converter from "../assets/converter/converter.png";
+import hangman from "../assets/hangman/hangmanThumbnail.png";
+import converter from "../assets/converter/converterThumbnail.png";
 import ezcookforme from "../assets/ezcookforme/ezcookforme.png";
 import todolist from "../assets/todolist/todolist.png";
 import website from "../assets/website/website.png";
-import masakin from "../assets/masakin/masakin.jpg";
+import masakin from "../assets/masakin/masakinThumbnail.png";
 
 export const projects = [
   {

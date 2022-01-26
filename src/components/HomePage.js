@@ -46,7 +46,7 @@ const HomePage = () => {
         <div className="homepage-foto">
           <img src={Foto} alt="Foto Pindika" />
         </div>
-        <div className="homepage-text">
+        <div className="homepage-text text">
           <h1>
             Yo! I’m <span className="homepage-pindika">Pindika!</span>
           </h1>
@@ -75,14 +75,14 @@ const HomePage = () => {
         </div>
       </div>
       <div className="homepage-2" id="project">
-        <h1>P R O J E C T</h1>
+        <h1 className="text">P R O J E C T</h1>
         <ProjectList projects={projects} />
       </div>
       <div className="homepage-3" id="aboutme">
-        <h1>A B O U T&nbsp; M E</h1>
+        <h1 className="text">A B O U T&nbsp; M E</h1>
         <div className="aboutme-container">
           <div className="aboutme-container-text">
-            <div className="aboutme-text">
+            <div className="aboutme-text text">
               <p>
                 {aboutmeText}
                 {/* {isDesktop ? <div>aaa</div> : [isReadMore ? aboutmeText.slice(0, 150) : <p>{aboutmeText}</p>]}
@@ -93,7 +93,7 @@ const HomePage = () => {
                                 </span>] : <div>aaa</div>} */}
               </p>
             </div>
-            <div>
+            <div className="text">
               <p>Check out my socials!</p>
             </div>
             <div className="aboutme-icons">
