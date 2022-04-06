@@ -48,6 +48,7 @@ const Header = () => {
             </LinkRouter>
           </li>
           <li className="header-list">
+            {/* {pathname === "/" ? ( */}
             <Link
               className="header-link underline-transition"
               to="project"
@@ -55,6 +56,17 @@ const Header = () => {
             >
               Project{" "}
             </Link>
+            {/* ) : (
+              <LinkRouter
+                className="header-link underline-transition"
+                to="/"
+                onClick={() => {
+                  setOpen(false);
+                }}
+              >
+                Project{" "}
+              </LinkRouter>
+            )} */}
           </li>
           {/* <li className="header-list">
                         <a className="header-link underline-transition" href="https://medium.com/@anathapindika.m" target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>

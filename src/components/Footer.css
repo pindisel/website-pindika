@@ -1,13 +1,15 @@
 .footer {
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    height: 70px;
-    border-top: 1px solid #457b9d;
-    color: #f1faee;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #1d3557;
-    margin-top: auto;
+  bottom: 0;
+  width: 100%;
+  /* position: fixed; */
+  text-align: center;
+  height: 70px;
+  border-top: 1px solid #457b9d;
+  color: #f1faee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1d3557;
+  margin-top: auto;
+  z-index: 10;
 }

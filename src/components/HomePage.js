@@ -15,7 +15,8 @@ import "./HomePage.css";
 import ProjectList from "./ProjectList";
 import { projects } from "./project";
 
-const HomePage = () => {
+const HomePage = (props) => {
+  console.log(props);
   function scrollWin() {
     window.scrollTo(0, 0);
   }

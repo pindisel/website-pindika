@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import Slider from "react-slick";
-// import { Link as LinkRouter } from "react-router-dom";
+import { Link as LinkRouter } from "react-router-dom";
 import "./HomePage.css";
 
 import "slick-carousel/slick/slick.css";
@@ -79,13 +79,15 @@ const ProjectList = ({ projects }) => {
               >
                 <div className="project-container-2">
                   <h2 className="project-name text">{project.name}</h2>
-                  {/* <LinkRouter to={`/project/${project.name.replaceAll(" ", "-")}`}> */}
-                  <img
-                    src={project.image}
-                    className="project-thumbnail"
-                    alt={project.name}
-                  />
-                  {/* </LinkRouter> */}
+                  <LinkRouter
+                    to={`/project/${project.name.replaceAll(" ", "-")}`}
+                  >
+                    <img
+                      src={project.thumbnail}
+                      className="project-thumbnail"
+                      alt={project.name}
+                    />
+                  </LinkRouter>
                 </div>
               </div>
             );
