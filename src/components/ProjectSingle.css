@@ -24,8 +24,9 @@
 .project-single-image {
   margin-bottom: 1vh;
 }
+
 .project-single-image img {
-  max-width: 1000px;
+  max-width: 80%;
 }
 
 .project-single-link {
