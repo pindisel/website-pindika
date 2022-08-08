@@ -47,7 +47,7 @@ const HomePage = (props) => {
     <div className="homepage" id="homepage">
       <div className="homepage-1">
         <div className="homepage-foto">
-          <img src={Foto1} alt="Foto Pindika" />
+          <img src={Foto} alt="Foto Pindika" />
         </div>
         <div className="homepage-text text">
           <h1>
@@ -157,7 +157,7 @@ const HomePage = (props) => {
             </div>
           </div>
           <div className="aboutme-container-photo">
-            <img src={Foto2} alt="Foto Pindika" />
+            <img src={Foto} alt="Foto Pindika" />
           </div>
         </div>
       </div>
