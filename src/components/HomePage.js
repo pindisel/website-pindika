@@ -1,9 +1,9 @@
 import React from "react";
 // import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-// import Foto from "../assets/foto.png";
-import Foto1 from "../assets/foto1.png";
-import Foto2 from "../assets/foto2.png";
+import Foto from "../assets/foto.png";
+// import Foto1 from "../assets/foto1.png";
+// import Foto2 from "../assets/foto2.png";
 import {
   AiOutlineInstagram,
   AiOutlineLinkedin,
